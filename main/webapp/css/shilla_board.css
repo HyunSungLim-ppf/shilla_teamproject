@@ -1,0 +1,457 @@
+@charset "utf-8";
+/* #wrap{
+    font-family: "Noto Sans KR", sans-serif;    
+    min-width: 1920px;
+    margin: 0 auto;
+} */
+.w1000{
+    /* (1000/1920)*100 = 52.083333333333336 */
+    width: 52.083333333333336vw;
+    margin: 0 auto;
+    /* 폰트사이즈 수정 : 1rem => 0.875rem */
+    font-size: 0.875rem;
+    /* ((0.875*16)/1920)*100 = 0.7291666666666666 */
+    font-size: 0.7291666666666666vw;
+}
+/* main */
+.title{
+    margin-top: 100px;
+    /* (100/1920)*100 = 5.208333333333334 */
+    margin-top: 5.208333333333334vw;
+    border-bottom: 5px solid #432c10;
+    /* (5/1920)*100 = 0.26041666666666663 */
+    border-bottom: 0.26041666666666663vw solid #432c10;
+}
+.title .top_menu{
+    padding-bottom: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    padding-bottom: 0.9375vw;
+}
+.title .top_menu h1{
+    width: 200px;
+    /* (200/1920)*100 = 10.416666666666668 */
+    width: 10.416666666666668vw;
+    /* 수정v1.1.8 width: 90px; -> 200px로 수정 */
+    /* width: 90px; */
+    /* 폰트사이즈 수정 : 36px -> 2rem */
+    font-size: 2rem;
+    /* (36/1920)*100 = 1.875 */
+    font-size: 1.875vw;
+    /* 폰트두께 수정 : bold -> 500 */
+    font-weight: 500;
+    color: #865009;
+    /* 플롯 */
+    float: left;
+}
+.title .top_menu ul{
+    /* 플롯 */
+    float: right;
+    /* 플렉스 */
+    display: flex;
+}
+.title .top_menu ul li{
+    margin-left: 15px;
+    /* (15/1920)*100 = 0.78125 */
+    margin-left: 0.78125vw;
+}
+.title .top_menu ul li:last-child{
+    color: #865009;
+    /* border-bottom: 1px solid #865009; */
+    /* (1/1920)*100 = 0.052083333333333336 */
+    /* border-bottom: 0.052083333333333336vw solid #865009; */
+    font-weight: 700;
+}
+.text{
+    /* font-size: 18px; */
+    /* 수정 폰트사이즈 변경 18px -> 0.875rem */
+    font-weight: 400;
+    /* (27/1920)*100 = 1.40625 */
+    margin-top: 1.40625vw;
+}
+.text p{
+    color: #696969;
+    line-height: 1.5;
+}
+/* 전체 탭메뉴 부모박스 */
+.top_container {    
+    /* max-width: 1200px; */    
+    margin: 0 auto;
+    margin-top: 43px;
+    /* (43/1920)*100 = 2.2395833333333335 */
+    margin-top: 2.2395833333333335vw;
+}
+/* Tab Menu */
+.top_tabs {
+    width: 100%;    
+}
+.top_tabs li {
+    width: 25%;    
+    color: #865009;
+    border: 1px solid #E4D8C9;
+    border: 0.052083333333333336vw solid #E4D8C9;
+    border-left: 1px solid white;
+    border-left: 0.052083333333333336vw solid white;
+    border-right: 1px solid white;
+    border-right: 0.052083333333333336vw solid white;
+    text-align: center;
+    line-height: 46px;
+    /* (46/1920)*100 = 2.3958333333333335 */
+    line-height: 2.3958333333333335vw;
+    background-color: #E4D8C9;
+    cursor: pointer;
+    /* 플롯 */
+    float: left;
+}
+/* on클래스 기법 */
+.top_tabs li.top_on {
+    background: #fff;
+    border: 1px solid #E4D8C9;
+    border: 0.052083333333333336vw solid #E4D8C9;
+    border-bottom: none;
+}
+
+/* 검색창 */
+/*
+	1029 형섭 추가: select 추가 ------------------------------------------------
+*/
+.top_container .search select {
+/* 형섭 수정	width: 75px; */
+	width: 3.90625vw;
+/* 형섭 수정 height: 35px; */
+    /* (35/1920)*100 = 1.8229166666666667 */
+    height: 1.8229166666666667vw;
+/* 형섭 수정 padding-left: 5px; */
+	padding-left: 0.26041666666vw;
+/* 폰트사이즈 추가 */	
+	font-size: 0.72916666666vw;
+}
+.top_container .search{
+/*  margin-top: 35px; */
+    margin-top: 1.8229166666666667vw;
+}
+.top_container .search .box{
+    float: right;
+}
+.top_container .search .box input{
+/* 1029 형섭 수정: width 값 274px -> 200px 가변형으로 수정 ----------------------------------------- */
+/*  width: 200px; */
+	width: 10.4166666667vw;
+/*  height: 35px; */
+    height: 1.8229166666666667vw;
+/* 1029 형섭 수정 : 색상 #000000 -> #1b1b1b */
+    border: 1px solid rgb(188,188,188);
+    border: 0.052083333333333336vw solid rgb(188,188,188);
+/* 1029 형섭 추가 : input padding-left 추가 */
+/*  padding-left: 5px; */
+    padding-left: 0.26041666666vw;
+    font-size: 0.72916666666vw;
+}
+/* 검색결과 없을 시 안내문구 */
+.container .instructions {
+    /* 28px */
+    font-size: 1.45833333333vw;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #865009;
+    text-align: center;
+    /* 100px */
+    margin-top: 5.20833333333vw;
+    padding-bottom: 5.20833333333vw; 
+    border-bottom: 0.052083333333333336vw solid #d1d1d1; 
+    /* 동일한 border-top = .tab_contents에 추가  */  
+}
+.container .instructions b{
+	font-weight: 450;
+	color: #1b1b1b;
+}
+/* / 1029 형섭 추가 끝 --------------------------------------------------------------------------- */
+.top_container .search .box button{
+    width: 85px;
+    /* (85/1920)*100 = 4.427083333333334 */
+    width: 4.427083333333334vw;
+    height: 35px;
+    /* (35/1920)*100 = 1.8229166666666667 */
+    height: 1.8229166666666667vw;
+    line-height: 35px;
+    line-height: 1.8229166666666667vw;
+    text-align: center;
+    background-color: #3a3125;
+    /* font-size: 16px; */
+    /* 수정 폰트사이즈 16px -> 0.875rem */
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+ /* 모듈 경고창 CSS */
+ .alert {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 9999999;
+    /* 로딩시 안보이도록 코딩 */
+    display: none;
+}
+
+/* 로딩시 전체탭 내용 가리기 */
+.top_container .all .container {
+    display: none;
+}
+/* 로딩시 첫번째 내용만 보이기 */
+.top_container .all .container:first-child {
+    display: block;
+}
+/* 카테고리별 탭메뉴 부모박스 */
+.container {
+    /* max-width: 1200px; */
+    /* margin-top: 35px; */
+    margin-top: 1.8229166666666667vw;
+   
+}
+
+
+
+
+
+
+
+/* Tab Menu */
+.tabs {
+    width: 60%;
+    /* margin-bottom: 16px; */
+    /* (16/1920)*100 = 0.8333333333333334 */
+     margin-bottom: 0.8333333333333334vw;
+}
+
+
+
+.tabs li {
+    width: 25%;
+    border-right: 1px solid #d1d1d1;
+    border-right: 0.052083333333333336vw solid #d1d1d1;
+    text-align: center;       
+    cursor: pointer;
+    /* 플롯 */
+    float: left;
+}
+
+
+
+
+.tabs li:last-child{
+    border: none;
+}
+/* on클래스 기법 */
+.tabs li.on {
+    color: #000;
+    /* 기존 폰트크기 삭제 */
+    /* font-size: 17px; */
+    font-weight: bold; 
+    
+}
+/* 탭내용 부모박스 */
+.tab_contents {
+    /* max-width: 1200px; */
+    width: 100%;
+    height: auto;
+   
+    border-top: 0.052083333333333336vw solid #d1d1d1; 
+    
+}
+/* 로딩시 전체탭 내용 가리기 */
+.tab_contents .list {
+    display: none;
+}
+/* 로딩시 첫번째 내용만 보이기 */
+.tab_contents .list:first-child {
+    display: block;
+}
+/* 로딩시 모든 답변내용 가리기 */
+.tab_contents .list .answer {
+    display: none;
+}
+
+/* 질문영역 */
+.list .question {
+    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 0.052083333333333336vw solid #d1d1d1;
+    cursor: pointer;
+}
+.list ul li:first-child .question{
+    /* border-top: 1px solid #d1d1d1; */
+    /* border-top: 0.052083333333333336vw solid #d1d1d1; */
+}
+.list .question dt {
+    /* width: 300px; */
+    /* width: 14%; */
+    /* (118/866)*100 = 13.625866050808314 */
+    width: 13.6259%;
+    /* width: 25%; */
+    text-align: center;    
+    font-weight: 500;
+    color: #5a4b4b;
+    /* 플롯 */
+    float: left;
+}
+
+.list .question dd {
+    /* width: 900px; */
+    /* width: 86%; */
+    /* padding-left: 50px; */
+    /* 100-13.6259 = 86.3741 */
+    width: 86.3741%;
+    padding-left: 17.32101616628176px;
+    /* (17.32101616628176/1920)*100 = 0.9021362586605082 */
+    padding-left: 0.9021362586605082vw;
+    /* width: 75%; */
+    padding-right: 50px;
+    /* (50/1920)*100 = 2.604166666666667 */
+    padding-right: 2.604166666666667vw;    
+    /* 플롯 */
+    float: right;
+}
+.list .question dt,
+.list .question dd {
+    line-height: 52px;
+    /* (52/1920)*100 = 2.7083333333333335 */
+    line-height: 2.7083333333333335vw;
+}
+
+
+.list .notice{
+    background-color: #Fff;
+}
+
+/* 언더라인위치수정 */
+.list .notice .udline:hover a{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* 작성자, 작성일 추가 */
+
+/* 작성자, 작성일 추가 */
+/* .name_date
+	.user_name과 .reg_date를 감싸는 div 태그
+.user_name 
+	작성자 이름을 감싸는 span태그
+.reg_date
+	작성일을 감싸는 span태그
+ */
+
+.list ul li dl dd .name_date span#user_name{
+    margin-right: 150px;
+}
+.list ul li dl dd .name_date span#reg_date{
+    margin-right: 0;
+}
+.name_date{
+    display: inline-block;
+    color: #5a4b4b;
+    float: right;
+}
+
+
+
+
+
+/* 페이지 표시 */
+.bottom_container{
+  
+    margin-bottom: 76px;
+    /* (76/1920)*100 = 3.958333333333333 */
+    margin-bottom: 3.958333333333333vw;
+    position: relative;
+  
+}
+
+
+.paging{
+	margin-top: 40px;
+    text-align: center;    
+    font-size: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    font-size: 0.9375vw;
+    font-weight: bold;
+    top:-50px;
+}
+
+
+.paging_btn{
+    display: inline-block;
+    width: 25px;
+    /* (25/1920)*100 = 1.3020833333333335 */
+    width: 1.3020833333333335vw;
+    height: 25px;
+    height: 1.3020833333333335vw;
+    /* 수정 폰트사이즈 변경 기본 -> 0.875rem */
+    font-size: 0.875rem;
+    font-size: 0.7291666666666666vw;
+    line-height: 21.5px;
+    /* (21.5/1920)*100 = 1.1197916666666667 */
+    line-height: 1.1197916666666667vw;
+    margin: 0 5px;
+    /* (5/1920)*100 = 0.26041666666666663 */
+    margin: 0 0.26041666666666663vw;
+    text-align: center;
+    border: 1px solid #000;  
+    border: 0.052083333333333336vw solid #000;  
+    opacity: 0.5;  
+}
+
+
+.paging_btn:hover{
+    cursor: pointer;
+    background-color: #352122;
+    color: white;
+}
+.page .prev:hover,.page .next:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+
+/*페이징 온클래스 */
+.paging_btn.on{
+	font-weight: bold;
+	background-color: #b9b9b9;
+}
+
+.bottom_container button{
+    width: 85px;
+    width: 4.427083333333334vw;;
+    height: 35px;
+    height: 1.8229166666666667vw;
+    line-height: 35px;
+    line-height: 1.8229166666666667vw;
+    text-align: center;
+    background-color: #3a3125;
+    /* font-size: 16px; */
+    /* 수정 폰트사이즈 16px -> 0.875rem */
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+
+    position: absolute;
+    right: 0;
+    top: -30px;
+    top: -1.5625vw;
+    z-index: 1;
+    
+}
+
+.go_back i,
+.go_next i{
+	font-size:  1vw;
+	transition : 0.5s ease;	
+	opacity: 0.5;
+}
+.go_next:hover i, .go_back:hover i{
+	opacity:0.7;
+	
+}
+

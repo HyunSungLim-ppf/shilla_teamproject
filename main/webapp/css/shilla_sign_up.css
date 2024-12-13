@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+textarea,input {
+    width: auto;
+    vertical-align: middle;
+}
+#wrap_main {
+    width: 1000px;
+    margin: 100px auto;
+    /* 가변 */
+    width: 52.08333333333333vw;
+
+
+
+
+    margin: 5.208333333333333vw auto;
+}
+main h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #432c10;
+    color:#865009;
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 18px;
+    /* 가변 */
+    font-size: 1.041666666666667vw;
+    padding-bottom: 0.5208333333333333vw;
+    border-bottom: 0.2604166666666667vw solid #432c10;
+    padding-bottom: 0.9375vw;
+}
+form {
+    font-size: 15px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    /* 가변 */
+    font-size: 0.78125vw;
+    margin-top: 4.166666666666667vw;
+    margin-bottom: 6.25vw;
+}
+.essential {
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+
+form h2 {
+    font-size: 16px;
+    font-weight: 600;
+    /* 가변 */
+    font-size: 0.8333333333333333vw;
+}
+form p {
+    font-size: 14px;
+    /* 가변 */
+    font-size: 0.7291666666666667vw;
+}
+form fieldset {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* 가변 */
+    margin-top: 1.041666666666667vw;
+    margin-bottom: 2.604166666666667vw;
+
+}
+form fieldset table{
+    width: 1000px;
+    /* 가변 */
+    width: 52.08333333333333vw;
+    
+}
+form fieldset table tr td{ 
+    border-bottom: 1px solid #9b998f;
+    /* 가변 */
+    border-bottom: 0.0520833333333333vw solid #9b998f;
+}
+
+form fieldset table tr td{
+    padding-left: 16px;
+    /* 가변 */
+    padding-left: 0.8333333333333333vw;
+}
+form fieldset table tr td:first-child {
+    background-color: #faf9f4;
+    width: 200px;
+    width: 10.41666666666667vw;
+}
+input, select {
+    border: 1px solid #dcdcdc;
+    padding: 6px 0;
+    margin: 5px;
+    /* 가변 */
+    border: 0.0520833333333333vw solid #dcdcdc;
+    padding: 0.3125vw 0;
+    margin: 0.2604166666666667vw;
+}
+/* 추가 글자크기 줄이기 */
+span {
+    font-size: 13px;
+    /* 가변 */
+    font-size: 0.6770833333333333vw;
+}
+/* 버튼 */
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    /* 가변 */
+    padding: 0.2604166666666667vw 0.5208333333333333vw;
+}
+.button1,.button3  {
+    /* 이메일, 아이디 중복확인 버튼 */
+    background-color: #7c6347;
+    color: #faf1d0;
+}
+.button2 {
+    /* 주소찾기 버튼 */
+    background-color: #727272;
+    color: #e9e8e8;
+}
+.button4 {
+    /* 가입신청 버튼만 있을 때 */
+    background-color: #3a3125;
+    color: #faf1d0;
+    font-size: 18px;
+    width: 90px;
+    height: 35px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* 가입신청, 취소 버튼 있을 때 */
+    background-color: #3a3125;
+    color: #fff;
+    font-size: 15px;
+    width: 110px;
+    height: 40px;
+    padding: 2px 5px;
+
+    /* 가변 */
+    font-size: 0.78125vw;
+    /* width: 5.729166666666667vw; */
+    width: 4.6875vw;
+    /* height: 2.083333333333333vw; */
+    height: 1.8229166667vw;
+    padding: 0.1041666666666667vw 0.2604166666666667vw;
+    margin: 0 0.52083333vw;
+}
+.submit {
+    text-align: center;
+    margin-top: 120px;
+    /* 가변 */
+    margin-top: 6.25vw;
+}
+/* 유효성 검사에 따른 input창 스타일 */
+/* 실패시 스타일*/
+input[class="failed_input_style"]{
+    font-size: 12px;
+    
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    /* 가변 */
+    border: 0.0520833333333333vw solid red;
+}
+/* 성공시 스타일 */
+input[class="success_input_style"]{
+    font-size: 12px;
+    /*폰트 사이즈 가변*/
+    font-size: 0.625vw;
+    
+    border: 1px solid green;
+    background-color: rgba(0, 255, 0, 0.2);
+    /* 가변 */
+    border: 0.0520833333333333vw solid green;
+}
+
+/* 240902 추가 HotFix */
+.alert {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 9999;
+    display: none;
+
+    padding: 10px;
+    background: #3a3125;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+/* 가변 추가 */
+#adress1, #adress2{
+    width: 41.71875vw;
+    height: 1.510416666666667vw;
+}
+input{
+    width: 8.90625vw;
+    height: 1.510416666666667vw;
+    font-size: 0.625vw;
+}
+select{
+    height: 1.614583333333333vw;
+    font-size: 0.625vw;
+}
+#title{
+    width: 3.177083333333333vw;
+}
+#year{
+    width: 4.0625vw;
+}
+#month{
+    width: 2.03125vw;
+}
+#day{
+    width: 1.979166666666667vw;
+}
+#domain{
+    width: 4.84375vw;
+}
+main h1{
+    font-size: 1.875vw;
+}

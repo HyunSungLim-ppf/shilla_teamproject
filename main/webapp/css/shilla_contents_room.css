@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* 슬라이더 영역 */
+.cp_slider {
+    text-align: center;
+}
+.cp_slider img {
+    /* width: 100vw; */
+    width: 1920px;
+    width: 100vw;
+    height: 650px;
+    /* (650/1920)*100 */
+    height: 33.8vw;
+    margin-bottom: 150px;
+    margin-bottom: 7.8vw;
+}
+/* 콘텐츠 박스 영역 */
+.cp_contents {
+    font-family: 'Noto Sans KR','Roboto';
+    letter-spacing: -2px;
+     /* Safe area */
+     width: 1200px;
+     /* (1200/1920)*100 = 62.5 */
+     width: 62.5vw;
+     margin: 0 auto;
+     text-align: center;
+}
+.cp_left {
+    text-align: left;
+    margin-bottom: 100px;
+    margin-bottom: 5.2vw;
+}
+.cp_contents h1 {
+    font-size:28px;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #4c4c53;
+}
+.cp_contents h3 {
+    font-size: 24px;
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #5c5c5c;
+    padding-bottom: 6px;
+    padding-bottom: 0.3vw;
+}
+.cp_contents h4 {
+    font-size: 18px;
+    font-size: 0.93vw;
+    color: #808080;
+    padding-bottom: 12px;
+    padding-bottom: 0.6vw;
+}
+.cp_contents h5 {
+    color: #9f876b;
+    font-size: 22px;
+    font-size: 1.14vw;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;;
+}
+.cp_contents p {
+    font-size: 18px;
+    font-size: 0.93vw;
+    color: #b8b8b8;
+    line-height: 28px;
+    line-height: 1.45vw;
+}
+.content_line {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.content_line_l {
+
+    border-bottom: 1px solid #d9d9d9;
+    /* padding-top: 50px;
+    padding-top: 2.6vw; */
+    /* padding-bottom: 50px;
+    padding-bottom: 2.6vw; */
+
+}
+
+.content {
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+}
+
+
+
+.content_lower {
+    /* margin: 30px 0 ;
+    margin: 6.3vw 0; */
+    margin: 4.2vw 0;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.content button{
+    width: 110px;
+    width: 5.72vw;
+    height: 40px;
+    height: 2.08vw;
+    font-size: 0.93vw;
+}
+.view_img {
+    background-color: #9f876b;
+    color: #fcfaf9;
+    margin-right: 6px;
+    margin-right: 0.3vw;
+}
+.reserve {
+    background-color: #3a3125;
+    color: #fcfaf9;
+}
+.cp_contents .content_line .content img {
+    width: 570px;
+    width: 30vw;
+    height: 260px;
+    height: 14vw;
+}
+/*v1.1.10 추가 css  */
+.cp_slider {
+    position: relative;
+}
+.cp_slider>p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+    font-size: 4.1vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cp_slider>p span {
+    font-size: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    font-size: 0.93vw;
+}

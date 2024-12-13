@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* 슬라이더 영역 */
+.cp_slider {
+    text-align: center;
+}
+.cp_slider img {
+    width: 1920px;
+    width: 100vw;
+    height: 650px;
+    /*(650/1920)*100 = 33.85416666666667*/
+    height: 33.8vw;
+}
+/* 콘텐츠 박스 영역 */
+.cp_contents {
+    font-family: 'Noto Serif KR', 'Noto Sans KR';
+     /* Safe area */
+     width: 1200px;
+     /* (1200/1920)*100 = 62.5 */
+     width: 62.5vw;
+     margin: 0 auto;
+     text-align: center;
+}
+.cp_left {
+    text-align: left;
+}
+.cp_contents h1 {
+    font-size:26px;
+    /* (26/1920)*100 = 1.3541666666666667 */
+    font-size: 1.35vw;
+    font-weight: 500;
+    color: #432d10;
+    margin-bottom: 80px;
+    /* (80/1920)*100 = 4.166666666666666 */
+    margin-bottom: 4.1vw;
+    margin-top: 150px;
+    /* (150/1920)*100 = 7.8125 */
+    margin-top: 7.8vw;
+    display: inline-block;
+}
+.cp_contents h2 {
+    font-size: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    font-size: 0.9vw;
+    font-weight: 600;
+    color: #96836d;
+    padding-bottom: 20px;
+    /* (20/1920)*100 = 1.0416666666666665 */
+    padding-bottom: 1.04vw;
+    display: inline-block;
+}
+.cp_contents h3 {
+    font-size: 22px;
+    /* (22/1920)*100 = 1.1458333333333333 */
+    font-size: 1.14vw;
+    font-weight: 500;
+    color: #432d10;
+    padding-bottom: 30px;
+    /* (30/1920)*100 = 1.5625 */
+    padding-bottom: 1.56vw;
+}
+.cp_contents .content_line {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 40px;
+    /* (40/1920)*100 = 2.083333333333333 */
+    padding-bottom: 2.08vw;
+    /* 플렉스 */
+    display: flex;
+}
+.cp_contents .content_line:last-child{
+    margin-bottom: 80px;
+    /* (80/1920)*100 = 4.166666666666666 */
+    margin-bottom: 4.16vw;
+}
+.cp_contents .content_line .content:nth-child(1),
+.cp_contents .content_line .content:nth-child(2) {
+    display: inline-block;
+    margin-right: 30px;
+    /* (30/1920)*100 = 1.5625 */
+    margin-right: 1.56vw;
+}
+.cp_contents .content_line .content img {
+    width: 380px;
+    /* (380/1920)*100 = 19.791666666666664 */
+    width: 19.79vw;
+    height: 240px;
+    /* (240/1920)*100 = 12.5 */
+    height: 12.5vw;
+}
+.content_title:last-child {
+    margin-bottom: 150px;
+    /* (150/1920)*100 = 7.8125 */
+    margin-bottom: 7.8vw;
+}
+
+/*v1.1.10 추가 css  */
+.cp_slider {
+    position: relative;
+}
+.cp_slider>p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+    /* (80/1920)*100 = 4.166666666666666 */
+    font-size: 4.16vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cp_slider>p span {
+    font-size: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    font-size: 0.9vw;
+}
+
+
+/* <!-- v1.1.14 추가 css --> */
+
+.cp_contents h4 {
+    color: #595959;
+    font-weight: 500;
+    font-size: 16px;
+    /* (16/1920)*100 = 0.8333333333333334 */
+    font-size: 0.83vw;
+    margin-top: 20px;
+    /* (20/1920)*100 = 1.0416666666666665 */
+    margin-top: 1.04vw;
+    padding-bottom: 10px;
+    /* (10/1920)*100 = 0.5208333333333333 */
+    padding-bottom: 0.52vw;
+}
+.cp_contents p {
+    font-size: 13px;
+    /* (13/1920)*100 = 0.6770833333333334 */
+    font-size: 0.67vw;
+    color: #8a8a8a;
+}
+.text {
+    margin-top: 10px;
+    /* (10/1920)*100 = 0.5208333333333333 */
+    margin-top: 0.52vw;
+}
+.text p{
+    font-size: 12px;
+    /* (12/1920)*100 = 0.625 */
+    font-size: 0.62vw;
+    color: #d0d0d0;
+    font-weight: 500;
+    padding-bottom: 5px;
+    /* (5/1920)*100 = 0.26041666666666663 */
+    padding-bottom: 0.26vw;
+}
+
+button {
+    font-size: 13px;
+    font-size: 0.67vw;
+    width: 90px;
+    /* (90/1920)*100 = 4.6875 */
+    width: 4.68vw;
+    height: 30px;
+    /* (30/1920)*100 = 1.5625 */
+    height: 1.56vw;
+    margin-top: 20px;
+    /* (20/1920)*100 = 1.0416666666666665 */
+    margin-top: 1.04vw;
+}
+.button .question {
+    background-color: #9f876b;
+    color: #fcfaf9;
+}
+.button .reserve {
+    background-color: #3a3125;
+    color: #fcfaf9;
+}
+
+/* wedding css */
+
+.title_wd p {
+    font-weight: 500;
+    line-height: 18px;
+    /* (18/1920)*100 = 0.9375 */
+    line-height: 0.93vw;
+    margin-bottom: 20px;
+    /* (20/1920)*100 = 1.0416666666666665 */
+    margin-bottom: 1.041vw;
+}
+
+
+/* lifestyle css */
+.text_ls {
+    margin-top: 20px;
+    margin-top: 1.041vw;
+}
+.text_ls p{
+    font-size: 12px;
+    /* (12/1920)*100 = 0.625 */
+    font-size: 0.62vw;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 10px;
+    /* (10/1920)*100 = 0.5208333333333333 */
+    line-height: 0.52vw;
+}
+
+
+
+
+
+

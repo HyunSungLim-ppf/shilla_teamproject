@@ -1,0 +1,557 @@
+/* 전체 보더라인 컬러 및 위치 수정!!!!!!!!!!!! */
+@charset "utf-8";
+body{
+    font-family: 'Noto Sans KR',sans-serif;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.w800{
+    width: 800px;
+    /* 800/1920*100 = 41.66666666666667 */
+    /* 가변형 너비수정 */
+    width: 41.6667vw;
+    margin: 0 auto;
+    /* 전체 폰트사이즈 추가 0.875rem */
+    font-size: 0.875rem;
+    /* 14/920*100 = 1.5217391304347827 */
+    font-size: 1.5217vw;
+    /* 가변형 폰트사이즈 수정 */
+    /* font-size: 0.046vw; */
+
+    
+}
+/* .w1200{
+    width: 1200px;
+    margin: 0 auto;
+} */
+.p200{
+    padding: 0 200px;
+    /* 200/1920*100 = 10.416666666666668 */
+    padding: 0 10.4167vw;
+}
+/* .w1040{
+    width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+/* 문의하기 */
+/* 문의하기 FORM Input, textarea 공통 */
+textarea ,input{
+    /* font-size: 13px; */
+    /* 수정 폰트사이즈 13px => 0.875rem */
+    font-size: 0.875rem;
+}
+/* 수정v1.1.8 <h3>폰트사이즈 12px => 14px로 수정 */
+fieldset h3{
+    font-size: 14px;
+    /* 14/1902*100 = 0.7360672975814931 */
+    font-size: 0.7360672975814931vw;
+    /* font-size: 0.875rem; */
+    border: 1px solid #E4D8C9;
+    border-bottom: none;
+}
+.sec_6 h3{    
+/* .sec_7 h3{     */
+    border-bottom: 1px solid #E4D8C9;
+}
+.sec_1 div,
+.sec_2 div,
+.sec_20 div,
+.sec_3 div,
+.sec_4 div,
+.sec_5 div,
+.sec_6 div
+/* .sec_7 삭제(자택전화번호) */
+/* .sec_7 div */
+{
+    border: 1px solid #E4D8C9;
+    border-left: none;
+    border-bottom: none;
+}
+.sec_6 div{
+/* .sec_7 div{ */
+    border-bottom: 1px solid #E4D8C9;
+}
+#select, #select1,#domain{
+    border: 1px solid #E4D8C9;    
+}
+main .top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 5px solid #432c10;
+   
+    padding-bottom: 20px;
+    /* 20/1920*100 = 1.0416666666666665 */
+    padding-bottom: 1.0417vw;
+    margin-bottom: 40px;
+    /* 40/1920*100 = 2.083333333333333 */
+    margin-bottom: 2.0833vw;
+    margin-top: 75px;
+    /* 75/1920*100 = 3.90625 */
+    margin-top: 3.9063vw;
+}
+.top h2{
+    /* font-size: 36px; */
+    /* 수정 폰트사이즈 36px => 2rem */
+    /* font-size: 2rem; */
+    /* 36/1920*100 = 1.875 */
+    font-size: 1.875vw;
+    font-weight: 500;
+    color: #865009;
+}
+/* 수정v1.1.8 폰트사이즈 16px 조절, li = margin-left: 15px; 추가조정 */
+main .top ul{
+    display: flex;
+    margin-top: -18px;
+    /* 18/1920*100 = 0.9375 */
+    margin-top: -0.9375vw;   
+    transform: translateY(50%);
+    font-size: 0.7291666666666666vw;
+}
+main .top ul li{    
+    margin-left: 15px;
+    /* 15/1920*100 = 0.78125 */
+    margin-left: 0.78125vw;
+    /* font-size: 16px; */
+    /* 수정 폰트사이즈 16px => 0.875rem */
+    /* font-size: 0.875rem; */
+    /* 16/1920*100 = 0.8333333333333334 */
+    /* font-size: 0.8333333333333334vw; */
+   
+
+
+    height: 24px;
+    /* 24/1920*100 = 1.25 */
+    height: 1.25vw;
+    line-height: 16px;
+    /* 16/1920*100 = 0.8333333333333334 */
+    line-height: 0.8333333333333334vw;
+}
+main .top ul li:last-child{
+    color: #865009;
+    /* text-decoration: underline;     */
+    font-weight: bold;  
+}
+main .top ul img{
+    width: 12px;
+    /* 12/1920*100 = 0.625 */
+    width: 0.625vw;
+    height: 12px;
+    /* 12/1920*100 = 0.625 */
+    height: 0.625vw;
+}
+main form fieldset .sec_1,
+main form fieldset .sec_2,
+/* main form fieldset .sec_3, */
+main form fieldset .sec_20,
+main form fieldset .sec_4,
+main form fieldset .sec_5,
+main form fieldset .sec_6{
+/* sec_7 삭제 */	
+/* main form fieldset .sec_7{ */
+    display: flex;
+    text-align: center;
+    height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    height:2.604166666666667vw;
+    /* font-size: 12px; */
+    /* font-size: 0.75rem; */
+    /* 12/1920*100 = 0.625 */
+    font-size: 0.625vw;
+}
+
+/* form */
+/* 구분 sec_1 */
+main form fieldset h3{
+    background-color: #faf9f4;
+    width: 180px;
+    /* 180/1920*100 = 9.375 */
+    width: 9.375vw;
+    height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    height: 2.6042vw;
+    line-height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    line-height: 2.604166666666667vw;
+    /* border: 1px solid #ccc; */
+}
+.sec_1 .radio_group{
+    display: flex;
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+}
+.sec_1 label{
+    display: flex;    
+    margin-right: 30px;
+    /* 30/1920*100 = 1.5625 */
+    margin-right: 1.5625vw;
+}
+.sec_1 label input{
+    margin-right: 5px;
+    /* 5/1920*100 = 0.26041666666666663 */
+    margin-right: 0.2604vw;
+}
+.sec_1 label p{
+    /* font-size: 14px; */
+    /* font-size: 0.75rem; */
+    /* 14/1920*100 = 0.7291666666666666 */
+    font-size: 0.7291666666666666vw;
+    transform: translateY(8%);
+}
+.sec_1 label:nth-child(1){
+    margin-left: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    margin-left: 0.5208333333333333vw;
+}
+main form fieldset .content{
+    height: 157px;
+    /* 157/1920*100 = 8.177083333333334 */
+    height: 8.1771vw;
+    line-height: 157px;
+    /* 157/1920*100 = 8.177083333333334 */
+    line-height: 8.1771vw;
+    /* border: 1px solid #ccc; */
+    background-color: #faf9f4;
+}
+/* 질문유형 sec_2 */
+.sec_2>div select{
+    width: 129px;
+    /* 129/1920*100 = 6.71875 */
+    width: 6.7188vw;
+    height: 25px;
+    /* 25/1920*100 = 1.3020833333333335 */
+    height: 1.3021vw;
+    /* font-size: 13px; */
+    /* font-size: 0.8125rem; */
+    /* 13/1920*100 = 0.6770833333333334 */
+    font-size: 0.6770833333333334vw;
+}
+.sec_2>div{
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    padding: 12px 10px;
+    /* 12/1920*100 = 0.625/ 10/1920*100 = 0.5208333333333333 */
+    padding: 0.625vw 0.5208333333333333vw;
+    /* border: 1px solid #ccc; */
+    text-align: left;
+}
+
+/* 수정v1.1.8 JS관련 CSS추가 */
+.sec_2 .select_q #select{
+    display: none;
+}
+.sec_2 .select_q #select:first-child{
+    display: block;
+}
+.sec_20>div{
+    /* border: 1px solid #ccc; */
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    padding: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding: 0.5208333333333333vw;
+    text-align: left;
+}
+.sec_20>div>input{
+    width: 456px;
+    /* 456/1920*100 = 23.75 */
+    width: 23.75vw;
+    height: 25px;
+    /* 25/1920*100 = 1.3020833333333335 */
+    height: 1.3021vw;
+    border:1px solid #E4D8C9;
+}
+
+/* 내용 sec_3 */
+.sec_3{
+    display: flex;
+    /* font-size: 12px; */
+    /* font-size: 0.75rem; */
+    /* 12/1920*100 = 0.625 */
+    font-size: 0.625vw;
+    height: 157px;
+    /* 157/1920*100 = 8.177083333333334 */
+    height: 8.1771vw;
+    line-height: 157px;
+    line-height: 8.1771vw;
+}
+.sec_3 .contnet{
+    height: 157px;
+    height: 8.1771vw;
+    line-height: 157px;
+    line-height: 8.1771vw;
+}
+
+.sec_3 div textarea{
+    border: 1px solid #E4D8C9;
+    width: 600px;
+    /* 600/1920*100 = 31.25 */
+    width: 31.25vw;
+    height: 137px;
+    /* 137/1920*100 = 7.135416666666666 */
+    height: 7.135416666666666vw;
+}
+.sec_3>div{
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    height: 157px;
+    height: 7.135416666666666vw;
+    padding: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding: 0.5208vw;
+    /* border: 1px solid #ccc; */
+}
+
+/* 성명란 작성자로 고정 값 삽입 */
+/* 성명 sec_4 */
+/* .sec_4>div select{ */
+/*     width: 77px; */
+/*     77/1920*100 = 4.010416666666667 */
+/*     width: 4.0104vw; */
+/*     height: 25px; */
+/*     25/1920*100 = 1.3020833333333335 */
+/*     height: 1.3021vw; */
+/*     line-height: 25px; */
+/*     line-height: 1.3021vw; */
+/*     font-size: 13px; */
+/*     font-size: 0.8125rem; */
+/*     13/1920*100 = 0.6770833333333334 */
+/*     font-size: 0.6770833333333334vw; */
+
+/* } */
+/* .sec_4 input[type="text"]{ */
+/*     width: 156px; */
+/*     156/1920*100 = 8.125 */
+/*     width: 8.125vw; */
+/*     height: 25px; */
+/*     height: 1.3021vw; */
+/*     border: 1px solid #E4D8C9; */
+/* } */
+.sec_4>div{
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding: 0.5208333333333333vw;
+    height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    height: 2.6042vw;
+    /* 폰트사이즈 추가 */
+    font-size: 0.7291666666666666vw;
+    /* line-height: 25px; */
+    /* 25/1920*100 */
+    line-height: 1.55vw;
+    text-align: left;
+}
+
+.sec_6{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* 이메일 sec_5 */
+/* 이메일을 고정값으로 받을 것이 때문에 css 삭제 */
+/* .sec_5 input[type="text"]{   
+    width: 156px;
+    156/1920*100 = 8.125
+    width: 8.125vw;
+
+    height: 25px;
+    16/1920*100 = 0.8333333333333334
+    font-size: 0.8333333333333334vw;
+    25/1920*100 = 1.3020833333333335
+    height: 1.3021vw;
+    패딩추가
+    padding-left: 5px;
+    padding-left: 0.26041vw;
+    
+    border: 1px solid #E4D8C9;
+
+}
+
+.sec_5 .button1 {
+    이메일, 아이디 중복확인 버튼    
+    background-color: #7c6347;
+    color: #faf1d0;
+    width: 120px;
+    120/1920*100 = 6.25
+    width: 6.25vw;
+    height: 25px; 
+    25/1920*100 = 1.3020833333333335
+    height: 1.3020833333333335vw;
+    font-size: 12px;
+    12/1920*100 = 0.625  
+    font-size: 0.75rem;  
+    font-size: 0.625vw;
+    text-align: center;
+ 
+}
+.sec_5 #domain{
+    width: 120px;
+    120/1920*100 = 6.25
+    width: 6.25vw;
+    height: 25px;
+    25/1920*100 = 1.3020833333333335
+    height: 1.3021vw;
+ 
+ 
+} */
+
+.sec_5>div{
+    width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding: 0.5208333333333333vw;
+    height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    height: 2.6042vw;
+    /* 폰트사이즈 추가 */
+    font-size: 0.7291666666666666vw;
+    /* line-height: 25px; */
+    /* 25/1920*100 */
+    line-height: 1.55vw;
+    text-align: left;
+}
+
+
+/* 높이 맞추기 */
+
+/* .sec_5 .email{
+    display: flex;
+} */
+/* @ */
+/* .sec_5 .email p{
+    line-height: 1.3021vw;
+}
+.sec_5 .email .button1{
+    margin-top: 0;
+} */
+
+
+/* 핸드폰을 고정값으로 받을 것이 때문에 css 삭제 */
+/* .sec_6 input[type="tel"]{
+    width: 156px;
+    156/1920*100 = 8.125
+    width: 8.125vw;
+    height: 25px;
+    25/1920*100 = 1.3020833333333335
+    height: 1.3021vw;
+    border: 1px solid #E4D8C9;
+} */
+.sec_6>div{
+width: 620px;
+    /* 620/1920*100 = 32.29166666666667 */
+    width: 32.2917vw;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding: 0.5208333333333333vw;
+    height: 50px;
+    /* 50/1920*100 = 2.604166666666667 */
+    height: 2.6042vw;
+    /* 폰트사이즈 추가 */
+    font-size: 0.7291666666666666vw;
+    /* line-height: 25px; */
+    /* 25/1920*100 */
+    line-height: 1.55vw;
+    text-align: left;
+}
+/* 버튼 */
+button{
+    margin: 0 auto;
+    /* 수정 버튼 크기 ,색, 글자색 */
+    /* 폰트사이즈 수정 16px => 0.875rem */
+    width: 85px;
+    /* 85/1920*100 = 4.427083333333334 */
+    width: 4.4271vw;
+    
+    height: 35px;
+    /* 35/1920*100 = 1.8229166666666667 */
+    height: 1.8229vw;
+	/* important 추가 */
+    background-color: #3a3125 !important;
+    color: white !important;
+    margin-bottom: 75px;
+    /* 75/1920*100 = 3.90625 */
+    margin-bottom: 3.9063vw;
+    font-weight: bold;
+
+      /* 간격 추가 */
+    margin: 0.520833vw;
+}
+.sec_2 select{
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-size: 0.625vw;
+}
+form h3,
+.content{
+    text-align-last: left;
+    padding-left: 10px;
+    /* 10/1920*100 = 0.5208333333333333 */
+    padding-left: 0.5208vw;
+    font-weight: 600;
+}
+.radio_group input[type="radio"]{
+    /* 라디오버튼 크기 수정 */
+    /* width: 20px;
+    width: 1.0416vw; */
+    width: 17px;
+    width: 0.88541vw; 
+    /* height: 20px;
+    height: 1.0416vw; */
+    height: 17px;
+    height: 0.88541vw;
+}
+.button_group{
+    /* v1.1.7 CSS 수정 = text-align : center; 추가 (버튼 가운데 정렬) */
+    text-align: center;
+    /* 16/1920*100 = 0.8333333333333334; */
+    font-size: 0.8333vw;
+    /* 등록,취소 버튼 마진 수정 */
+    /* margin-top: 45px; */
+    margin-top: 60px;
+    /* 1.0416*3 = 3.1248000000000005 */
+    margin-top: 3.1248vw;
+    margin-bottom: 30px;
+	margin-bottom: 0;
+
+}
+
+.button_group button a{
+    font-weight: normal;
+    font-size: 14px;
+    font-size: 0.7291666vw;
+}
+
+/* 모듈 경고창 CSS */
+.alert {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 9999999;
+    /* 로딩시 안보이도록 코딩 */
+    display: none;
+}
+#select option:first-child{
+    font-weight: bold;
+}
+#select{
+    width: 150px;
+    /* 150/1920*100 = 7.8125 */
+    width: 7.8125vw;
+}

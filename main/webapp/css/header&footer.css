@@ -1,0 +1,640 @@
+@charset "utf-8";
+/* 오류방지를 위해 body 선택자부터 쭉 넣어주시면 감사하겠습니다~~~~~ */
+/* Header 영역 시작 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    width: 100%;
+    /* 가변 */
+    width: 100vw;
+
+    height: 94px;
+    /* 가변 */
+    height: 4.8958vw;
+
+    background-color: #F1E3C4;
+    padding-top: 16px;
+    /* 가변 */
+    padding-top: 0.83333vw;
+
+}
+.w1200{
+    width: 1200px;
+    /* 가변 */
+    width: 62.5vw;
+
+    margin: 0 auto;
+}
+header h1{
+    text-align: center;
+    height: 2.5vw;
+}
+header h1 img{
+    /* 가변 */
+    width: 10.4166667vw;
+    height: 2.5vw;
+}
+header .gnb_main ul:first-child{
+    float: left;
+}
+header .gnb_main ul:last-child{
+    float: right;
+}
+header .gnb_main ul {
+    width: 370px;
+    /* 가변 */
+    width: 19.27vw;
+
+
+    font-size: 16px;
+    /* 가변 */
+    font-size:  0.83333vw;
+
+    font-weight: bold;
+    color: #62523F;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* 수정v1.0.4 이거 없애도 됨*/
+/* header .gnb_main li {
+    padding-bottom: 11px;
+} */
+header .gnb_main li:hover{
+    border-bottom: 3px solid rgba(98, 82, 63, 0.8);
+}
+.top_wrap {
+    position: relative;
+
+    width: 1200px;
+    /* 가변 */
+    /* width: 62.5vw; */
+    /* 틀어지는거 수정 */
+	width: 62.5vw;
+	
+
+    margin: 0 auto;
+   
+	  
+  
+}
+.gnb_top {
+    font-size: 12px;
+    /* 가변 */
+    font-size: 0.625vw;
+
+    font-weight: 300;
+    color: #62523F;
+
+    margin-top: 12px;
+    /* 가변 */
+    margin-top: 0.625vw;
+
+    position: absolute;
+    right: -0.520833333vw;
+    top: 0;
+    z-index: 11;
+
+}
+
+/* 수정v1.1.11 언어 기능 추가를 위한 CSS 수정 */
+/* .gnb_top ul { */
+.gnb_top>ul {
+	width: 400px;
+	width:20.8333333333vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+}
+
+.gnb_top img {
+    width: 10px;
+    /* 가변 */
+    width: 0.5208vw;
+ 
+    height: 9px;
+    /* 가변 */
+    height: 0.46875vw;
+
+    padding-top: 4px;
+    /* 가변 */
+    padding-top: 0.2083vw;
+}
+.gnb_top img[alt="language"] {
+    width: 15px;
+    /* 가변 */
+    width: 0.78125vw;
+    
+    height: 15px;
+    /* 가변 */
+    height: 0.78125vw;
+
+    padding-top: 0;
+}
+
+.hidden_depth {
+    position: relative;
+}
+.gnb_sub{
+    width: 100%;
+    background-color: rgba(98, 82, 63, 0.8);
+    color: #fff;
+
+    font-size: 14px;
+    /* 가변 */
+    font-size: 0.72916vw;
+
+    padding: 20px 10px;
+    /* 가변 */
+    padding: 1.04166667vw 0.52083333vw ;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    display: none;
+}
+
+
+
+
+.gnb_sub:nth-child(1) ul{
+    margin-left: 345px;
+    /* 가변 */
+    margin-left: 17.96875vw;
+
+
+}
+.gnb_sub ul {
+    display: flex;
+}
+
+.gnb_sub:nth-child(2){
+    padding-left: 605px;
+    /* 가변 */
+    padding-left: 31.5104vw;
+}
+.gnb_sub dl{
+    float: left;
+}
+.gnb_sub dl {
+    margin-right: 76px;
+    /* 가변 */
+    margin-right: 3.9583333vw;
+
+    margin-bottom: 10px;
+    /* 가변 */
+    margin-bottom:0.5208vw; 
+
+    padding-left: 10px;
+    /* 가변 */
+    padding-left: 0.5208vw;
+
+
+    border-left: 3px solid #fff;
+}
+.gnb_sub dt {
+    font-size: 16px;
+    /* 가변 */
+    font-size: 0.83333vw;
+
+    font-weight: 700;
+
+    padding-bottom: 5px;
+    /* 가변 */
+    padding-bottom: 0.260416vw;
+
+    margin-bottom: 5px;
+    /* 가변 */
+    margin-bottom: 0.260416vw;
+
+    border-bottom: 1px solid #fff;
+}
+.gnb_sub dd {
+    margin-bottom: 5px;
+    /* 가변 */
+    margin-bottom: 0.260416vw;
+
+    line-height: 1.8;
+}
+.gnb_sub dd:last-child {
+    margin-bottom: 0;
+}
+
+.gnb_sub:nth-child(3) {
+    padding-left: 1183.5px;
+    /* 가변 */
+    padding-left: 61.61458333vw;
+
+}
+.gnb_sub:nth-child(4) {
+    padding-left: 1127px;
+    /* 가변 */
+    padding-left: 58.6979166667vw;
+}
+
+.gnb_sub a:hover {
+    border-bottom: 1px solid #fff;
+}
+/* Header 영역 끝 */
+
+
+
+
+
+
+
+
+
+/* Footer 영역 시작 */
+footer section:first-child {
+    height: 170px;
+    /* 가변 */
+    height: 8.854167vw;
+
+    background-color: #F1EBD6;
+    
+    
+    /* 가변 */
+    padding-bottom:  1.19791666666667vw;
+}
+
+footer section:first-child div.w1200 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.ft_main_left {
+    padding: 65px 0;
+    /* 가변 */
+    padding: 3.3854167vw 0;
+
+
+    margin-right: 60px;
+    /* 가변 */
+    margin-right:3.125vw ;
+
+}
+.ft_main_left a img{
+    /* 가변 */
+    width: 8.90625vw;
+    height: 2.135416666667vw;
+}
+
+.ft_main_right {
+    width: 980px;
+    /* 가변 */
+    width: 51.041667vw;
+}
+.ft_main_rigth_top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    padding-top: 30px;
+    /* 가변 */
+    padding-top: 1.5625vw;
+
+
+    padding-bottom: 23px;
+    /* 가변 */
+    padding-bottom: 1.19791666667vw;
+
+    margin-bottom: 30px;
+    /* 가변 */
+    margin-bottom: 1.5625vw;
+
+    border-bottom: 1px solid #E6E1CC;
+
+     /* 가변 */
+     width: 50.46875vw;
+}
+
+
+.ft_main_rigth_top li {
+    margin-right: 40px;
+    /* 가변 */
+    margin-right: 2.08333333333333vw;
+}
+.ft_main_rigth_top li{
+    height:0.83333333333333vw ;
+}
+.ft_main_rigth_top li:first-child{
+    height: 0.9375vw;
+}
+.ft_main_rigth_top li:first-child {
+    margin-top: -2px;
+    /* 가변 */
+    margin-top: -0.10416666666667vw;
+}
+
+
+/* 가변 */
+.ft_main_rigth_top li:nth-child(1) a img{
+    width: 7.29166666vw;
+}
+.ft_main_rigth_top li:nth-child(2) a img{
+    width: 11.77083333333vw;
+}
+.ft_main_rigth_top li:nth-child(3) a img{
+    width: 7.8125vw;
+}
+
+
+
+.ft_main_rigth_bottom {
+    display: flex;
+    justify-content: start;
+    line-height: 2;
+
+    /* 가변 */
+    /* width: 50.46875vw;
+    height: 2.5vw; */
+}
+
+
+
+.ft_main_rigth_bottomLeft {
+    font-size: 11px;
+    /* 가변 */
+    font-size: 0.57291666666667vw;
+
+
+    padding-right: 75.5px;
+    margin-right: 75.5px;
+    /* 가변 */
+    padding-right: 3.93229166666667vw;
+    margin-right: 3.93229166666667vw;
+
+    /* 가변 */
+    /* width: 18.75vw; */
+    height: 2.5vw;
+
+    border-right: 1px solid #E6E1CC;
+    color: #4f4f4f;
+}
+
+
+.ft_main_rigth_bottomLeft p{
+    /* 가변 */
+    height: 1.145833333333vw;
+    width: 14.765625vw;
+}
+
+
+.ft_main_rigth_bottomMid {
+    font-size: 12px;
+    /* 가변 */
+    font-size: 0.625vw;
+
+    color: #786551;
+    
+    margin-right: 229.3px;
+    /* 가변 */
+    margin-right: 11.94270833vw;
+
+    /* 가변 */
+    /* width: 12.959895833vw; */
+    /* height: 2.5vw; */
+}
+
+
+.ft_main_rigth_bottomMid p:last-child {
+    color: #4f4f4f;
+}
+
+.ft_main_rigth_bottomMid p{
+    /* 가변 */
+    height: 1.145833333333vw;
+    /* width: 12.95989583333333vw; */
+    /* ----사이트 맵 위치 조정----- */
+    width: 13.5vw;
+    /* --------------------------------- */
+}
+
+
+
+
+.ft_main_rigth_bottomRight {
+    line-height: 0;
+    
+    /* 가변 */
+    /* width: 2.73333333333333vw;
+    height: 2.5vw; */
+}
+
+
+
+
+.ft_main_rigth_bottomRight p:nth-child(1) img{
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+.ft_main_rigth_bottomRight p:nth-child(2){
+    /* sns이미지 알 수 없게 공간 뜨는 거 강제로 플렉스 주기 */
+    width: 2.734375vw;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   /* 0.234375vw */
+}
+
+.ft_main_rigth_bottomRight p:nth-child(2) img{
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+
+
+
+.ft_main_rigth_bottomRight p:nth-child(2) a:nth-child(1){
+    padding-right: 0;
+    margin-right: 0;
+}
+
+
+.ft_main_rigth_bottomRight p:nth-child(2) a:nth-child(1) img{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+
+
+
+footer section:last-child {
+    font-size: 12px;
+    /* 가변 */
+    font-size: 0.625vw;
+    
+    font-weight: 700;
+
+    padding-top: 27px;
+    /* 가변 */
+    padding-top: 1.40625vw;
+    color: #bdbdbd;
+}
+.ft_sub_top {
+    padding-bottom: 22px;
+    /* 가변 */
+    padding-bottom: 1.14583333333333vw;
+
+    margin-bottom: 24px;
+    /* 가변 */
+    margin-bottom: 1.25vw;
+
+    border-bottom: 1px solid #dedede;
+}
+.ft_sub_top p:first-child {
+    float: left;
+}
+.ft_sub_top p:last-child {
+    float: right;
+    color: #91867A;
+}
+.ft_sub_top .c646464 {
+    color: #646464;
+}
+.ft_sub_top .cad8c71 {
+    color: #AD8C71;
+}
+.ft_sub_bottom {
+    font-size: 12px;
+    /* 가변 */
+    font-size: 0.625vw;
+
+    line-height: 1.5;
+}
+.ft_sub_bottomLeft {
+    color: #ADADAD;
+    padding-bottom: 50px;
+    /* 가변 */
+    padding-bottom: 2.60416666667vw;
+
+    letter-spacing: -0.5px;
+    /* 가변 */
+    letter-spacing: -0.0260416666vw;
+    
+    float: left;
+}
+.ft_sub_bottomLeft span {
+    display: inline-block;
+    font-size: 10px;
+    /* 가변 */
+    font-size: 0.5208333333vw;
+    
+    padding: 1.5px;
+    /* 가변 */
+    padding: 0.078125vw;
+    
+    border: 1px solid #bdbdbd;
+}
+.ft_sub_bottomLeft p:last-child {
+    font-size: 10px;
+    /* 가변 */
+    font-size: 0.5208333333vw;    
+    color: #8B8B8B;
+}
+.ft_sub_bottomRight {
+    color: #8B8B8B;
+    letter-spacing: -1px;
+    /* 가변 */
+    letter-spacing: -0.05208333vw;
+    float: right;
+    display: flex;
+}
+.ft_sub_bottomRight h3 {
+    padding-top: 4px;
+    /* 가변 */
+    padding-top: 0.20833333333vw;
+
+    margin-right: 8px;
+    /*가변 */
+    margin-right: 0.4166666666vw;
+}
+.ft_sub_bottomRight img {
+    width: 32px;
+    /* 가변 */
+    width: 1.666666666667vw;
+
+
+    height: 28px;
+    /* 가변 */
+    height: 1.4583333333vw;
+}
+/* Footer 영역 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 추가v1.1.11 언어선택 기능을 위한 css 추가 */
+.select_lang{
+    position: relative;
+}
+.select_lang>p{
+    cursor: pointer;
+}
+.lang_list{
+    position: absolute;
+    left: 0;
+
+    top: 20px;
+    /* 가변 */
+    top:1.04166666667vw;
+
+    display: none;
+    z-index: 9999999 !important; 
+}
+.lang_list li{
+    padding: 5px 0;
+    /* 가변 */
+    padding: 0.26041666667vw 0;
+    width: 100px;
+    /* 가변 */
+    width:5.2083333333vw;
+    background-color: #62523F;
+    color: #fff;
+}
+.lang_list li:hover{
+    background-color: #fff;
+    color: #62523F;
+    cursor: pointer;
+}
+
+
+/* 추가v1.1.11 페이지 경고창을 위한 css 추가 */
+.alert_by_Hayashi, .a {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 9999;
+    display: none;
+
+    padding: 10px;
+    background: #3a3125;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+#emoji{
+    font-size: 1.5rem;
+}
+

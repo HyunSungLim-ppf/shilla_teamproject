@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* @import url(./shilla_login_effect.css); */
+@import url(./shilla_find_id.css);
+@import url(./shilla_find_password.css);
+
+body {
+  height: 923px;
+  font-family: "Noto Sans KR" sans-serif;
+  /* background-image: url(../img/shill_bg.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.w800 {
+  width: 800px;
+  /* 가변 */
+  width: 41.67vw;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0 auto;
+}
+
+/* Login title */
+.login_title {
+  margin-top: 100px;
+  /* 가변 */
+  margin-top: 5.21vw;
+  border-bottom: 5px solid #432C10;
+  /* 가변 */
+  border-bottom: 0.2604166666666667vw solid #432C10;
+  padding-bottom: 20px;
+  /* 가변 */
+  padding-bottom: 1.041666666666667vw;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+.login_title h2 {
+  font-size: 2rem;
+  /* 가변 */
+  font-size: 1.86vw;
+  font-weight: 600;
+  color: #865009 ;
+  float: left;
+}
+
+/* 가변 */
+.login_title i {
+  font-size: 0.8333333333333333vw;
+}
+
+/* 가변 */
+.login_title span {
+  font-size: 0.8333333333333333vw;
+}
+
+.login_title .page_info {
+  /* margin-top: 20px; */
+  /* 가변 */
+  /* margin-top: 1.041666666666667vw; */
+  /* padding-bottom: 1.041666666666667vw; */
+}
+
+.login_title .page_info span {
+  color: #865009 ;
+  /* border-bottom: 1px solid #432C10; */
+  /* 가변 */
+  /* border-bottom: 0.0520833333333333vw solid #432C10; */
+  font-weight: 700;
+}
+
+/* Login Container */
+.login_container {
+  background-color: #F1E3C4;
+  width: 600px;
+  /* 가변 */
+  width: 31.25vw;
+  margin: 0 auto;
+  /* margin-top: 300px; */
+  padding-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  /* 가변 */
+  padding-top: 2.604166666666667vw;
+  margin-top: 0.5208333333333333vw;
+  margin-bottom: 10.41666666666667vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Lgoin Title */
+.login_container>h2 {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1.875rem;
+  /* 가변 */
+  font-size: 1.86vw;
+  padding-bottom: 30px;
+  /* 가변 */
+  padding-bottom: 1.5625vw;
+  padding-top: 15px;
+  /* 가변 */
+  padding-top: 0.78125vw;
+  color: #432C10;
+}
+
+/* 수정v1.1.5에 따른 추가 회원가입 아이디, 비밀번호 찾기 호버시 마우스 커서 pointer로*/
+.find_and_join div {
+  cursor: pointer;
+}
+
+/* Login Text */
+.login_text {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 50px;
+  /* 가변 */
+  padding-top: 2.604166666666667vw;
+  /* border-top: 3px solid #432C10; */
+  padding-bottom: 20px;
+  /* 가변 */
+  padding-bottom: 1.041666666666667vw;
+  text-align: center;
+}
+
+.login_text h2 {
+  color: #432C10;
+  font-size: 1.5rem;
+  /* 가변 */
+  font-size: 1.25vw;
+  font-weight: 700;
+  margin-bottom: 15px;
+  /* 가변 */
+  margin-bottom: 0.78125vw;
+}
+
+.login_text p {
+  color: #878787;
+  font-size: 0.875rem;
+  /* 가변 */
+  font-size: 0.7291666666666667vw;
+  line-height: 20px;
+  /* 가변 */
+  line-height: 1.041666666666667vw;
+}
+
+.login_container span {
+  font-weight: 700;
+}
+
+/* Login Form */
+#login_form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.id_input h2 {
+  font-size: 1.25rem;
+  /* 가변 */
+  font-size: 1.86vw;
+}
+
+.login_container input {
+  width: 300px;
+  height: 25px;
+  /* border: 2px solid #432C10; */
+  border-radius: 3px;
+  margin-bottom: 10px;
+  /* 가변 */
+  border-radius: 0.15625vw;
+  width: 15.625vw;
+  height: 1.302083333333333vw;
+  margin-bottom: 0.5208333333333333vw;
+  font-size: 0.8333333333333333vw;
+}
+
+/* input container */
+.input_container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* 로그인  버튼*/
+.login_container button {
+  width: 110px;
+  height: 60px;
+  background-color: #432C10;
+  border-radius: 3px;
+  color: #F1E3C4;
+  font-weight: 550;
+  font-size: 1rem;
+  margin-left: 30px;
+  cursor: pointer;
+  /* 가변 */
+  border-radius: 0.15625vw;
+  width: 5.729166666666667vw;
+  height: 3.125vw;
+  font-size: 0.8333333333333333vw;
+  margin-left: 1.5625vw;
+}
+
+/* User Find Btn & Join Btn */
+.find_and_join {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 30px 0;
+  /* 가변 */
+  padding: 1.5625vw 0;
+}
+
+.find_id_btn,
+.find_password_btn,
+.user_join_btn {
+  width: 140px;
+  height: 30px;
+  background-color: #9F876B;
+  color: #F4F1C4;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+  /* 가변 */
+  border-radius: 0.15625vw;
+  width: 7.291666666666667vw;
+  height: 1.5625vw;
+  line-height: 1.5625vw;
+  margin-left: 0.5208333333333333vw;
+}
+
+.find_id_btn {
+  margin-left: 0;
+}
+
+/* 24.09.02추가 로그인 페이지 모든 input칸 패딩 적용 */
+input {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-left: 10px;
+  /* 가변 */
+  padding-left: 0.5208333333333333vw;
+}
+
+/* 가변 추가 */
+.find_and_join div {
+  font-size: 0.8333333333333333vw;
+}
+
+input {
+  font-size: 0.8333333333333333vw;
+}
+
+.membership_img img {
+  width: 31.25vw;
+  height: 6.197916666666667vw;
+}

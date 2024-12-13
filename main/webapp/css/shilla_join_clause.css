@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+.w800{
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+  /* 드레그 방지 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+  /* 가변 */
+  width: 41.66666666666667vw;
+}
+main{
+  font-size: 0.875rem;
+  color: #666;
+  /* 가변 */
+  font-size: 0.7291666666666667vw;
+}
+
+/* page info */
+.clause_title{
+  margin-top: 50px;
+  /* border-bottom: 5px solid #976930; */
+  padding-bottom: 20px;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  /* 가변 */
+  margin-top: 2.604166666666667vw;
+  margin-top: 5.2083333vw;
+  border-bottom: 0.2604166666666667vw solid #432c10 ;
+  padding-bottom: 1.041666666666667vw;
+}
+.clause_title h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #865009;
+  float: left;
+  /* 가변 */
+  font-size: 1.666666666666667vw;
+}
+.clause_title .page_info{
+  /* margin-top: 20px; */
+  /* 가변 */
+  /* margin-top: 1.041666666666667vw; */
+  color: #000;
+  font-size:  0.78125vw;
+}
+.clause_title .page_info span{
+  color:  #865009  ;
+  /* border-bottom: 1px solid #976930; */
+  /* 가변 */
+  /* border-bottom: 0.0520833333333333vw solid #976930; */
+  font-weight: 700;
+  font-size:  0.78125vw;
+}
+
+/* Welcome Text */
+.welcome_text{
+  margin-top: 30px;
+  color: #9F876B;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  /* 가변 */
+  margin-top: 1.5625vw;
+  height: 3.4375vw;
+}
+.welcome_text h2 {
+  font-size: 1.666666666666667vw;
+}
+.welcome_text p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #888888;
+  margin: 20px 0;
+  /* 가변 */
+  font-size: 0.7291666666666667vw;
+  margin: 1.041666666666667vw 0;
+}
+
+/* Info Separation */
+.info_separation {
+  color: #444444;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #A1886F;
+  margin-bottom: 30px;
+  /* 가변 */
+  font-size: 1.041666666666667vw;
+  padding-bottom: 0.5208333333333333vw;
+  border-bottom: 0.15625vw solid #A1886F;
+  margin-bottom: 1.5625vw;
+}
+
+/* Clauses */
+/* All Clauses Agree */
+.all_clauses_agree{
+  margin-bottom: 40px;
+  /* 가변 */
+  margin-bottom: 2.083333333333333vw;
+}
+.all_clauses_agree label{
+  font-weight: 800;
+}
+.all_clauses_agree input{
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+  /* 가변 */
+  width: 0.78125vw;
+  height: 0.78125vw;
+  margin-bottom: 0.5208333333333333vw;
+}
+/* Clause Container */
+.clause_container{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #432C10;
+  /* 가변 */
+  padding-top: 1.041666666666667vw;
+  padding-bottom: 2.083333333333333vw;
+  border-bottom: 0.0520833333333333vw solid #432C10;
+}
+.last_clause_container{
+  border: none;
+}
+
+/* Clause Title & Show All BTN */
+.clause_top{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  /* 가변 */
+  padding-bottom: 0.5208333333333333vw;
+}
+.clause_top h2{
+  font-weight: 800;
+}
+.clause_top button{
+  /* width: 65px;
+  height: 25px; */
+  padding: 5px 10px;
+  background-color: #50371A;
+  color: #fff;
+  cursor: pointer;
+  /* 가변 */
+  padding: 0.2604166666666667vw 0.5208333333333333vw;
+}
+/* Clause1 */
+.clause_long{
+  white-space: pre-line;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 1px solid #cccccc;
+  overflow-y: auto;
+  /* 가변 */
+  height: 10.41666666666667vw;
+  border: 0.0520833333333333vw solid #cccccc;
+  margin-top: 0.5208333333333333vw;
+}
+.clause_long img{
+  width: 100%;
+}
+
+/* Other Clause */
+.clause{
+  white-space: pre-line;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: 1px solid #cccccc;
+  overflow-y: auto;
+  margin-top: 10px;
+  /* 가변 */
+  height: 5.208333333333333;
+  border: 0.0520833333333333vw solid #cccccc;
+  margin-top: 0.5208333333333333vw;
+}
+/* Essential Agree Check */
+.essential_is_agree {
+  margin-top: 10px;
+  /* 가변 */
+  margin-top: 0.5208333333333333vw;
+}
+.essential_is_agree input{
+  width: 15px;
+  height: 15px;
+  /* 가변 */
+  width: 0.78125vw;
+  height: 0.78125vw;
+}
+
+/* Page Btn */
+.btn_container{
+  width: 160px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  /* 가변 */
+  width: 8.854166666666667vw;
+  width: 8.33333vw;
+  margin: 2.604166666666667vw auto;
+}
+.btn_container button{
+  width: 70px;
+  height: 30px;
+  background-color: #393124;
+  color: #ffffff;
+  cursor: pointer;
+  /* 가변 */
+  width: 3.645833333333333vw;
+  height: 1.5625vw;
+}
+
+
+
+/* 24.09.02추가 동의함 동의하지 않음 일정 간격 띄워 주기 */
+label {
+  margin-right: 30px;
+  /* 가변 */
+  margin-right: 1.5625vw;
+}
+/* 가독성을 위한 약관 전체 패딩 추가 */
+.clause_long, .clause{
+  padding: 5px;
+  /* 가변 */
+  padding: 0.5208333333333333vw;
+}
